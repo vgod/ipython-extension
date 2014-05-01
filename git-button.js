@@ -11,7 +11,7 @@ IPython.toolbar.add_buttons_group([
             IPython.notebook.save_notebook();
             kernel.execute('!git status || git init');
             kernel.execute('!git add ' + nb_filename);
-            kernel.execute('!git commit -m "'+ commit_msg +'" ' + nb_filename);
+            kernel.execute('!git commit -m "'+ commit_msg +'"');
         }
     }
 }]);
